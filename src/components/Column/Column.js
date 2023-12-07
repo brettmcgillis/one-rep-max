@@ -22,4 +22,5 @@ const Column = ({ weight, reps, formula }) => {
         </div>
     );
 };
+
 export default Column;
