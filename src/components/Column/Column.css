@@ -7,6 +7,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+    padding: 0.2rem;
+
+    border-bottom: solid;
+    border-width: thin;
+    border-bottom-color: lightgray;
+}
+
+.Cell:last-child {
+    border-bottom: none;
 }
 
 .Cell-Header {
