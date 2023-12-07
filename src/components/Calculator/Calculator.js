@@ -8,13 +8,20 @@ const Calculator = ({ title = '1 Rep Max' }) => {
   const [weight, setWeight] = useState('');
   const [reps, setReps] = useState('');
 
+  const handleWeightChange = (value) => {
+    setWeight(value);
+  };
+
+  const handleRepsChange = (value) => {
+    setReps(value);
+  };
+
   return (
     <div className='Calculator'>
       <h2>{ title }</h2>
       <Inputs
-        key={title}
-        onWeightChange={setWeight}
-        onRepsChange={setReps}
+        onWeightChange={handleWeightChange}
+        onRepsChange={handleRepsChange}
       />
       <div className='Column-Container'>
         {formulae.map((formula, _) => (
