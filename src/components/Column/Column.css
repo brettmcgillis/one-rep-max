@@ -1,0 +1,19 @@
+.Column {
+    display: flex;
+    flex-direction: column;
+}
+
+.Cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Cell-Header {
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.Cell-Value {
+    justify-content: flex-end;
+}

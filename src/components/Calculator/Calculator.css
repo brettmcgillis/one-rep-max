@@ -1,0 +1,14 @@
+.Calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+.Column-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Column {
+    padding: 8px;
+}

@@ -1,0 +1,17 @@
+.Inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Input-container {
+    padding: 4px;
+}
+
+.Input-label {
+    padding-right: 4px;
+}
+
+.Input {
+    max-width: 40%;
+}
