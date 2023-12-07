@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Inputs.css';
 
-const Inputs = ({ key, onWeightChange, onRepsChange }) => {
+const Inputs = ({ onWeightChange, onRepsChange }) => {
   const [weight, setWeight] = useState('');
   const [reps, setReps] = useState('');
 
@@ -38,7 +38,7 @@ const Inputs = ({ key, onWeightChange, onRepsChange }) => {
         </label>
         <input
           className='Input'
-          type="text"
+          type="number"
           id="weightInput"
           value={weight}
           onChange={handleWeightChange}
@@ -53,7 +53,7 @@ const Inputs = ({ key, onWeightChange, onRepsChange }) => {
         </label>
         <input
           className='Input'
-          type="text"
+          type="number"
           id="repsInput"
           value={reps}
           onChange={handleRepsChange}
