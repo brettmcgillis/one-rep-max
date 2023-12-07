@@ -8,16 +8,16 @@ const Inputs = ({ key, onWeightChange, onRepsChange }) => {
   const handleWeightChange = (event) => {
     const value = event.target.value;
     if (value === '' || (/^\d*\.?\d*$/.test(value) && parseFloat(value) >= 1)) {
-      setWeight(value || '1');
-      onWeightChange(value || '1'); 
+      setWeight(value);
+      onWeightChange(value); 
     }
   };
 
   const handleRepsChange = (event) => {
     const value = event.target.value;
     if (value === '' || (/^\d*$/.test(value) && parseInt(value, 10) >= 1)) {
-      setReps(value || '1');
-      onRepsChange(value || '1');
+      setReps(value);
+      onRepsChange(value);
     }
   };
 
